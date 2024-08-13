@@ -78,7 +78,7 @@ const LoginSignup = () => {
     let responseData;
 
     try {
-      const response = await fetch('http://localhost:4000/login', {
+      const response = await fetch('https://backend-1-e20z.onrender.com/login', {
         method: 'POST',
         headers: {
           Accept: 'application/json',
@@ -112,7 +112,7 @@ const LoginSignup = () => {
     let responseData;
 
     try {
-      const response = await fetch('http://localhost:4000/signup', {
+      const response = await fetch('https://backend-1-e20z.onrender.com/signup', {
         method: 'POST',
         headers: {
           Accept: 'application/json',

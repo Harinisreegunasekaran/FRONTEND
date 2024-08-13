@@ -6,7 +6,7 @@ import { useSearchParams } from 'react-router-dom'
 const NewCollections = () => {
   const [new_collections,setNew_collection]=useState([]);
   useEffect(()=>{
-    fetch ('http://localhost:4000/newcollections')
+    fetch ('https://backend-1-e20z.onrender.com/newcollections')
     .then((response)=>response.json())
     .then((data)=>setNew_collection(data));
   },[])
